@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.love{
+    background-color: darkblue;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 10px;
+    width: 80%;
+}
+
+main{
+    background-color: darkblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+ .for{
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    background-color: red;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    border-radius: 14px;
+}
+.name h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.name button{
+    background-color: darkblue;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    height: 4vh;
+}
+.name input{
+    width: 100%;
+    height: 4vh;
+    border: none;
+}
+.enter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding:0px 10px;
+}
+.enter input{
+    text-align: center;
+    width: 100%;
+}
+
+.red button{
+    background-color: red;
+    border: none;
+    color: white;
+    height: 6vh;
+    width: 120%;
+    border-radius: 14px;
+    font-size: 25px;
+    
+}
+.red{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    bottom: 40px;
+}
+.love{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.set{
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.por{
+    width: 50%;
+    text-align: center;
+}
+@media screen and (max-width:950px){
+    .love{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+    .love{
+        height: 70vh; 
+    }
+    .red{
+        bottom: 10px;
+    }
+
+}
+.love-logo{
+    animation: change-color 3s  ease-in-out infinite;
+}
+@keyframes change-color{
+    0%{
+        color: red;
+        /* rotate: 0deg; */
+        /* scale: 0; */
+    }
+    100%{
+        color: white;
+        /* scale: 1; */
+        /* rotate: 360deg; */
+    }
+}
